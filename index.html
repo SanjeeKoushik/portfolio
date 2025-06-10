@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sanjeev Koushik Setty | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Hero / Intro Section -->
-  <header class="hero">
+  <header>
     <nav>
-      <ul class="nav-list">
+      <ul>
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -18,117 +18,114 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Hi there! I'm <br><span>Sanjeev Koushik Setty</span></h1>
-        <p>Business & Data Analyst | SQL • Python • Power BI</p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn primary">Say Hello</a>
-          <a href="assets/resume.pdf" class="btn secondary" target="_blank">Resume</a>
+    <div class="intro" style="text-align:center; padding: 1rem;">
+      <img src="assets/images/profile.jpg" alt="Profile photo" style="width:150px; border-radius: 50%;">
+      <h1>Hi there! I'm Sanjeev Koushik Sennam Setty</h1>
+      <p>Business Analyst & Data Analyst | SQL, Power BI, Python</p>
+      <a href="assets/resume.pdf" target="_blank">Download Resume</a>
+      <a href="mailto:koushiksennamsetty2@gmail.com">Contact Me</a>
+
+      <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem;">
+        <div style="text-align: center; padding: 1rem; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <h4>Experience</h4>
+          <h3>3+ Years</h3>
+          <p>Business & Data Analyst</p>
+        </div>
+        <div style="text-align: center; padding: 1rem; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <h4>Education</h4>
+          <h3>MS, Business Analytics</h3>
+          <p>University of Dayton</p>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="assets/images/profile.jpg" alt="Profile photo">
-      </div>
+
+      <p style="text-align: center; margin-top: 1.5rem;">
+        I’m a passionate Business & Data Analyst with over 3 years of experience building dashboards, automating data workflows, and delivering actionable insights using SQL, Power BI, Python, and Excel. I enjoy turning complex data into clear, business-driven solutions that support smarter decision-making.
+      </p>
     </div>
   </header>
 
-  <!-- About Me Section -->
-  <section id="about" class="about-section">
+  <section id="about">
     <h2>About Me</h2>
-    <div class="about-row">
-      <div class="about-img-wrapper">
-        <img src="assets/images/profile.jpg" alt="Me">
-      </div>
-      <div class="about-content">
-        <div class="cards-row">
-          <div class="card"><h4>Experience</h4><p>2+ Years</p><span>Data & Business Analyst</span></div>
-          <div class="card"><h4>Education</h4><p>MS, Business Analytics</p><span>University of Dayton</span></div>
-        </div>
-        <p>
-          I’m a passionate Business & Data Analyst with experience building dashboards, automating data workflows, and delivering actionable insights using SQL, Power BI, Python, and Excel. I enjoy turning complex data into clear, business-driven solutions.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="cards-col">
-      <div class="card">
-        <h3>Business Intelligence Analyst – Infinite Computer Solutions</h3>
-        <span>Oct 2024 – Present</span>
-        <ul>
-          <li>Built Power BI dashboards for asset management and compliance</li>
-          <li>Automated reconciliation checks (50% faster)</li>
-          <li>Supported audit reporting with exception tracking</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Associate Business Analyst – Software Solutions Desk Inc</h3>
-        <span>Mar 2024 – Oct 2024</span>
-        <ul>
-          <li>Gathered requirements and built SQL reporting dashboards</li>
-          <li>Created traceability matrices and improved operational workflows</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Software Developer – Abhi IT Solutions LLC</h3>
-        <span>Sep 2023 – Mar 2024</span>
-        <ul>
-          <li>Developed scripts to validate trade data across banking platforms</li>
-          <li>Collaborated across teams to maintain data continuity</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Data Analyst – Capgemini</h3>
-        <span>Mar 2020 – Jul 2021</span>
-        <ul>
-          <li>Performed root‑cause analysis using SQL & Excel</li>
-          <li>Created Tableau dashboards for settlement KPIs and monitoring</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="cards-col">
-      <div class="card">
-        <h3>Optimization Model – TG Transportation</h3>
-        <p>Developed scheduling optimization using Excel Solver and Power BI dashboard, reducing deviations by 25%.</p>
-      </div>
-      <div class="card">
-        <h3>HR Analytics Dashboard</h3>
-        <p>Built interactive Power BI dashboard analyzing attrition, diversity, and performance to guide HR decisions.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-grid">
-      <li>SQL</li><li>Power BI</li><li>Excel</li><li>Python</li><li>SSIS</li>
-      <li>Tableau</li><li>Looker</li><li>R</li><li>DAX</li><li>Git</li>
-      <li>JIRA</li><li>Agile</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:koushiksennamsetty2@gmail.com">koushiksennamsetty2@gmail.com</a><br>
-       LinkedIn: <a href="https://www.linkedin.com/in/sennamsetty/" target="_blank">linkedin.com/in/sennamsetty</a><br>
-       GitHub: <a href="https://github.com/SanjeeKoushik" target="_blank">github.com/SanjeeKoushik</a>
+    <p>
+      I’m a passionate Business & Data Analyst with over 3 years of experience in transforming raw data into meaningful insights that drive business impact.
+      I specialize in building interactive dashboards, automating workflows, and supporting strategic decision-making using tools like SQL, Power BI, Python, and Excel.
+    </p>
+    <p>
+      My work has spanned across industries such as banking, IT services, and trade operations, where I’ve helped teams improve operational efficiency, ensure data quality, and reduce manual processes through automation and reporting solutions.
+      I'm skilled at identifying patterns in large datasets and communicating findings through visuals that are easy to understand for both technical and non-technical audiences.
+    </p>
+    <p>
+      I take pride in my ability to bridge the gap between business needs and technical implementation — whether it's reconciling data from multiple sources, supporting audit readiness, or delivering KPIs that matter.
+      I'm continuously learning and enjoy collaborating with teams to build data-driven solutions that solve real-world problems.
     </p>
   </section>
 
-  <footer><p>© 2025 Sanjeev Koushik Setty</p></footer>
-</body>
-</html>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Total Experience: 3+ years as a Business Analyst, Data Analyst, and Developer across finance, trade, and IT services.</strong></p>
+
+    <h3>Business Intelligence Analyst – Infinite Computer Solutions</h3>
+    <p><em>October 2024 – Present</em></p>
+    <ul>
+      <li>Built Power BI dashboards to support asset management, transaction banking, and regulatory compliance, improving stakeholder visibility by 35%.</li>
+      <li>Automated reconciliation checks between internal and external trade books using Excel and SQL, reducing manual effort by 50%.</li>
+      <li>Generated exception reports highlighting mismatches in transaction flow, cutting reporting delays by 25%.</li>
+      <li>Supported risk management initiatives by producing audit-ready documentation and monthly compliance summaries.</li>
+    </ul>
+
+    <h3>Associate Business Analyst – Software Solutions Desk Inc</h3>
+    <p><em>March 2024 – October 2024</em></p>
+    <ul>
+      <li>Led requirements gathering for client onboarding, post-trade workflows, and service delivery enhancement across multiple departments.</li>
+      <li>Collaborated with QA and compliance teams to ensure data integrity and alignment with regulatory standards.</li>
+      <li>Developed SQL reports to track risk flags and operational breaches, contributing to a 20% increase in early issue detection.</li>
+      <li>Created traceability matrices and documentation for change management, supporting smoother project transitions and approvals.</li>
+    </ul>
+
+    <h3>Software Developer – Abhi IT Solutions LLC</h3>
+    <p><em>September 2023 – March 2024</em></p>
+    <ul>
+      <li>Built automated Python scripts to validate trade and transaction data across systems, reducing verification time by 30%.</li>
+      <li>Partnered with internal teams and stakeholders to maintain relationship management and ensure trade flow continuity.</li>
+      <li>Supported back-end processes by streamlining data validation scripts used across internal banking applications.</li>
+    </ul>
+
+    <h3>Data Analyst – Capgemini</h3>
+    <p><em>March 2020 – July 2021</em></p>
+    <ul>
+      <li>Conducted root cause analysis of trade discrepancies and SLA breaches using SQL and Excel, helping reduce monthly breach counts by 18%.</li>
+      <li>Built real-time Tableau dashboards to track settlement status and escalation patterns, enabling faster issue identification.</li>
+      <li>Created exception reports and performance metrics to assist in regulatory and internal control reporting.</li>
+      <li>Supported data quality checks for incident ticket logs and assisted team leads with ad-hoc report generation.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <h3>Optimization Model – TG Transportation</h3>
+    <p>
+      Built a scheduling optimization model using Excel Solver. Visualized KPIs in Power BI, improving cost efficiency by 25%.
+    </p>
+
+    <h3>HR Analytics Dashboard</h3>
+    <p>
+      Developed a Power BI dashboard to analyze attrition, performance, and diversity trends. Used DAX and Power Query to deliver actionable insights.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <h4>Languages</h4>
+    <p>Python, SQL, R, Java, JavaScript</p>
+
+    <h4>Data Tools</h4>
+    <p>Power BI, Tableau, Looker, Excel, DAX, Pandas, NumPy</p>
+
+    <h4>Databases</h4>
+    <
+
 
 
 
