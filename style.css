@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -66,23 +67,31 @@ nav .logo {
   border: 2px solid #111;
   color: #111;
 }
-.about, .experience, .projects, .skills, .contact {
+.about {
   padding: 4rem 2rem;
   background: #fafafa;
 }
-.about-content, .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+.about h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
 }
-.about-img img, .project-card img {
+.about h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.about-img img {
   width: 300px;
   border-radius: 12px;
 }
-.about-info, .project-card {
+.about-info {
   flex: 1;
-  min-width: 280px;
 }
 .info-cards {
   display: flex;
@@ -97,21 +106,70 @@ nav .logo {
   padding: 1rem;
   text-align: center;
 }
-.exp-card, .project-card, .skills-grid div, .contact-card {
+.experience {
+  padding: 4rem 2rem;
+}
+.experience h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.exp-card {
   background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.exp-card h3 {
+  margin-top: 0.5rem;
 }
 .exp-card ul {
   padding-left: 1.2rem;
+}
+
+
+.projects, .skills, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 1rem;
+  max-width: 320px;
+}
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
   margin-top: 2rem;
+}
+.skills-grid div {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.contact-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 footer {
   text-align: center;
@@ -131,6 +189,7 @@ footer {
   font-size: 1.5rem;
   margin: 0 0.5rem;
 }
+
 
 
 
