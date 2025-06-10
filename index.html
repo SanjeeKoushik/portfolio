@@ -2,85 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Sanjeev Setty | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanjeev Koushik Setty | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Hero / Intro Section -->
   <header class="hero">
-  <nav>
-    <ul class="nav-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>Hi there! I'm <br><span>Sanjeev Koushik Setty</span></h1>
-      <p>Business & Data Analyst | SQL • Python • Power BI</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn primary">Say Hello</a>
-        <a href="assets/resume.pdf" class="btn secondary" target="_blank">Resume</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi there! I'm <br><span>Sanjeev Koushik Setty</span></h1>
+        <p>Business & Data Analyst | SQL • Python • Power BI</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary">Say Hello</a>
+          <a href="assets/resume.pdf" class="btn secondary" target="_blank">Resume</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/profile.jpg" alt="Profile photo">
       </div>
     </div>
-    <div class="hero-image">
-      <img src="assets/images/profile.jpg" alt="Profile photo">
-    </div>
-  </div>
-</header>
+  </header>
 
-
-  <section id="about">
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
     <h2>About Me</h2>
     <div class="about-row">
-      <div><img src="assets/images/profile.jpg" alt="Me"></div>
-      <div>
+      <div class="about-img-wrapper">
+        <img src="assets/images/profile.jpg" alt="Me">
+      </div>
+      <div class="about-content">
         <div class="cards-row">
           <div class="card"><h4>Experience</h4><p>2+ Years</p><span>Data & Business Analyst</span></div>
           <div class="card"><h4>Education</h4><p>MS, Business Analytics</p><span>University of Dayton</span></div>
         </div>
-        <p>I’m a passionate Business & Data Analyst with experience building dashboards, automating data workflows, and delivering actionable insights using SQL, Power BI, Python, and Excel.</p>
+        <p>
+          I’m a passionate Business & Data Analyst with experience building dashboards, automating data workflows, and delivering actionable insights using SQL, Power BI, Python, and Excel. I enjoy turning complex data into clear, business-driven solutions.
+        </p>
       </div>
     </div>
   </section>
 
+  <!-- Experience Section -->
   <section id="experience">
     <h2>Experience</h2>
     <div class="cards-col">
-      <div class="card"><h3>Business Intelligence Analyst – Infinite Computer Solutions</h3><span>Oct 2024–Present</span>
-        <ul><li>Built Power BI dashboards for asset management</li><li>Automated reconciliation checks (50% faster)</li><li>Supported audit reporting</li></ul></div>
-      …add other roles similarly…
+      <div class="card">
+        <h3>Business Intelligence Analyst – Infinite Computer Solutions</h3>
+        <span>Oct 2024 – Present</span>
+        <ul>
+          <li>Built Power BI dashboards for asset management and compliance</li>
+          <li>Automated reconciliation checks (50% faster)</li>
+          <li>Supported audit reporting with exception tracking</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Associate Business Analyst – Software Solutions Desk Inc</h3>
+        <span>Mar 2024 – Oct 2024</span>
+        <ul>
+          <li>Gathered requirements and built SQL reporting dashboards</li>
+          <li>Created traceability matrices and improved operational workflows</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Software Developer – Abhi IT Solutions LLC</h3>
+        <span>Sep 2023 – Mar 2024</span>
+        <ul>
+          <li>Developed scripts to validate trade data across banking platforms</li>
+          <li>Collaborated across teams to maintain data continuity</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Data Analyst – Capgemini</h3>
+        <span>Mar 2020 – Jul 2021</span>
+        <ul>
+          <li>Performed root‑cause analysis using SQL & Excel</li>
+          <li>Created Tableau dashboards for settlement KPIs and monitoring</li>
+        </ul>
+      </div>
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="cards-col">
-      <div class="card"><h3>Optimization Model – TG Transportation</h3><p>Excel Solver + Power BI KPIs; reduced deviations by 25%.</p></div>
-      <div class="card"><h3>HR Analytics Dashboard</h3><p>Power BI dashboard for attrition & diversity insights.</p></div>
+      <div class="card">
+        <h3>Optimization Model – TG Transportation</h3>
+        <p>Developed scheduling optimization using Excel Solver and Power BI dashboard, reducing deviations by 25%.</p>
+      </div>
+      <div class="card">
+        <h3>HR Analytics Dashboard</h3>
+        <p>Built interactive Power BI dashboard analyzing attrition, diversity, and performance to guide HR decisions.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
     <ul class="skills-grid">
-      <li>SQL</li><li>Power BI</li><li>Python</li><li>Excel</li><li>SSIS</li><li>Tableau</li><li>Looker</li><li>R</li><li>DAX</li><li>Git</li><li>JIRA</li><li>Agile</li>
+      <li>SQL</li><li>Power BI</li><li>Excel</li><li>Python</li><li>SSIS</li>
+      <li>Tableau</li><li>Looker</li><li>R</li><li>DAX</li><li>Git</li>
+      <li>JIRA</li><li>Agile</li>
     </ul>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:koushiksennamsetty2@gmail.com">koushiksennamsetty2@gmail.com</a><br>
-    LinkedIn: <a href="https://linkedin.com/in/sennamsetty" target="_blank">linkedin.com/in/sennamsetty</a><br>
-    GitHub: <a href="https://github.com/SanjeeKoushik" target="_blank">github.com/SanjeeKoushik</a></p>
+       LinkedIn: <a href="https://www.linkedin.com/in/sennamsetty/" target="_blank">linkedin.com/in/sennamsetty</a><br>
+       GitHub: <a href="https://github.com/SanjeeKoushik" target="_blank">github.com/SanjeeKoushik</a>
+    </p>
   </section>
 
   <footer><p>© 2025 Sanjeev Koushik Setty</p></footer>
 </body>
 </html>
+
 
 
