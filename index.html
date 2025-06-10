@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sanjeev Koushik Setty | Portfolio</title>
+  <title>Sanjeev Koushik Setty</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
+  <header>
     <nav>
-      <ul>
+      <div class="logo">Sanjeev</div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -17,131 +20,95 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h4>Hi there! I'm</h4>
-        <h1>Sanjeev Koushik Setty</h1>
-        <p>Business & Data Analyst</p>
-        <p>I’m a passionate analyst focused on automating workflows, building dashboards, and delivering actionable insights with SQL, Power BI, Excel, and Python.</p>
-        <div class="hero-buttons">
-          <a href="mailto:koushiksennamsetty2@gmail.com">Say Hello</a>
-          <a href="assets/resume.pdf" target="_blank">Resume</a>
-        </div>
-      </div>
-      <img src="assets/images/profile.jpg" alt="Sanjeev photo" class="hero-image" />
-    </div>
   </header>
 
-  <section id="about" class="about">
-    <h2>About me</h2>
+  <section class="hero">
+    <div class="hero-left">
+      <h4>Hi there! I'm</h4>
+      <h1>Sanjeev Koushik Setty</h1>
+      <h3>Business & Data Analyst</h3>
+      <p>I’m a passionate Data Analyst focused on automating workflows, building dashboards, and delivering insights using SQL, Power BI, Excel & Python.</p>
+      <div class="buttons">
+        <a href="mailto:koushiksennamsetty2@gmail.com" class="btn">Say Hello</a>
+        <a href="assets/resume.pdf" class="btn-outline" target="_blank">Resume</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="assets/images/profile.jpg" alt="Profile photo" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Find out more</h2>
+    <h1>About me</h1>
     <div class="about-content">
-      <img src="assets/images/work.jpg" alt="Work" />
+      <div class="about-img">
+        <img src="assets/images/work.jpg" alt="Work image" />
+      </div>
       <div class="about-info">
-        <div class="about-cards">
-          <div>
+        <div class="info-cards">
+          <div class="card">
             <h4>Experience</h4>
             <p>3+ Years</p>
-            <p>Data & Business Analyst</p>
+            <span>Data & Business Analyst</span>
           </div>
-          <div>
+          <div class="card">
             <h4>Education</h4>
-            <p>MS in Business Analytics</p>
-            <p>University of Dayton</p>
+            <p>MS Business Analytics</p>
+            <span>University of Dayton</span>
           </div>
         </div>
-        <p>I’m a Business Analyst & Data Analyst with over 3 years of experience transforming raw data into meaningful insights. I've worked in banking, IT, and trade sectors to automate processes, enhance reporting, and deliver clean data dashboards using Power BI, SQL, Excel, and Python. I'm passionate about data storytelling and solving real business problems through analytics.</p>
+        <p>
+          I’m a Business & Data Analyst with over 3 years of experience in transforming raw data into meaningful insights. I specialize in SQL, Power BI,
+          Excel, and Python. I’ve worked across banking, IT, and trading domains to build data pipelines, design dashboards, and solve real-world problems with data.
+        </p>
       </div>
     </div>
   </section>
 
-  <section id="experience" class="experience">
-    <h2>Professional Journey so far...</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <span>October 2024 – Present</span>
-        <h3>Business Intelligence Analyst – Infinite Computer Solutions</h3>
-        <ul>
-          <li>Built Power BI dashboards for asset management & compliance; improved visibility by 35%.</li>
-          <li>Automated reconciliation using SQL & Excel; cut manual work by 50%.</li>
-          <li>Produced exception reports to reduce delays by 25%.</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <span>March 2024 – October 2024</span>
-        <h3>Associate Business Analyst – Software Solutions Desk Inc</h3>
-        <ul>
-          <li>Gathered requirements for post-trade workflows.</li>
-          <li>Built SQL reports for risk flag tracking, improving detection by 20%.</li>
-          <li>Created documentation to support change control and QA.</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <span>Sept 2023 – March 2024</span>
-        <h3>Software Developer – Abhi IT Solutions LLC</h3>
-        <ul>
-          <li>Developed Python scripts for transaction data validation.</li>
-          <li>Collaborated on internal tools for trade flow continuity.</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <span>March 2020 – July 2021</span>
-        <h3>Data Analyst – Capgemini</h3>
-        <ul>
-          <li>Used SQL & Tableau to analyze SLA breaches, reducing monthly violations by 18%.</li>
-          <li>Created exception reports and automated dashboards.</li>
-        </ul>
-      </div>
+  <section class="experience" id="experience">
+    <h2>Professional Journey so far…</h2>
+
+    <div class="exp-card">
+      <span>October 2024 – Present</span>
+      <h3>Business Intelligence Analyst – Infinite Computer Solutions</h3>
+      <ul>
+        <li>Built Power BI dashboards for asset management & compliance, improving visibility by 35%.</li>
+        <li>Automated reconciliation checks using SQL & Excel, cutting manual effort by 50%.</li>
+        <li>Delivered exception reports reducing reporting delays by 25%.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <span>March 2024 – October 2024</span>
+      <h3>Associate Business Analyst – Software Solutions Desk Inc</h3>
+      <ul>
+        <li>Gathered requirements for post-trade workflows & data reconciliation tools.</li>
+        <li>Created SQL reports to track risk flags, improving early issue detection by 20%.</li>
+        <li>Managed change logs and QA support documentation.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <span>Sept 2023 – March 2024</span>
+      <h3>Software Developer – Abhi IT Solutions LLC</h3>
+      <ul>
+        <li>Developed Python scripts to validate and transform trade data.</li>
+        <li>Built backend utilities for smoother transaction reconciliation.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <span>March 2020 – July 2021</span>
+      <h3>Data Analyst – Capgemini</h3>
+      <ul>
+        <li>Analyzed 200k+ ITSM tickets using SQL & Excel to reduce SLA violations by 18%.</li>
+        <li>Created Tableau dashboards for incident trend visualization.</li>
+        <li>Supported ad-hoc reporting and service team automation.</li>
+      </ul>
     </div>
   </section>
-
-  <section id="projects" class="projects">
-    <h2>My Learnings… Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Optimization Model – TG Transportation</h3>
-        <p>Built a scheduling optimization model using Excel Solver. Visualized KPIs in Power BI, reducing scheduling deviations by 25%.</p>
-      </div>
-      <div class="project-card">
-        <h3>HR Analytics Dashboard</h3>
-        <p>Created an interactive Power BI dashboard to analyze employee attrition, performance trends, and diversity insights.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="skills">
-    <h2>My Technical Level… Skills</h2>
-    <div class="skills-grid">
-      <div>
-        <h4>Data & Analytics</h4>
-        <p>Power BI, Excel, Tableau, Looker, DAX, SQL</p>
-      </div>
-      <div>
-        <h4>Languages & Tools</h4>
-        <p>Python, R, Java, JavaScript, Git, JIRA</p>
-      </div>
-      <div>
-        <h4>ETL & Cloud</h4>
-        <p>SSIS, Informatica, AWS (basic), Jenkins</p>
-      </div>
-      <div>
-        <h4>Databases</h4>
-        <p>SQL Server, MySQL, MongoDB</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Let’s work Together</h2>
-    <p>Email: <a href="mailto:koushiksennamsetty2@gmail.com">koushiksennamsetty2@gmail.com</a></p>
-    <div class="socials">
-      <a href="https://linkedin.com/in/sennamsetty" target="_blank">LinkedIn</a>
-      <a href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Sanjeev Koushik Setty. All Rights Reserved.</p>
-  </footer>
 </body>
 </html>
+
 
