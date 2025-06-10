@@ -140,23 +140,35 @@ footer {
   margin: 0 0.5rem;
 }
 
-/* ✅ NEWLY ADDED CENTERED HEADINGS */
+/* ✅ CENTERED SECTION HEADINGS */
+.projects,
+.skills,
+.contact,
+.about {
+  text-align: center;
+}
+
 .projects h2,
 .projects h1,
 .skills h2,
 .skills h1,
 .contact h3,
-.contact h1 {
+.contact h1,
+.about h2,
+.about h1 {
   text-align: center;
+  margin: 0 auto;
 }
 
 .projects h1,
 .skills h1,
-.contact h1 {
+.contact h1,
+.about h1 {
   margin-top: 0.5rem;
   font-size: 2rem;
   font-weight: 600;
 }
+
 
 
 
